@@ -1,0 +1,153 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+}
+
+.App {
+  text-align: center;
+}
+
+header {
+  background: linear-gradient(to right, #5f6974, #0077cc);
+  padding: 20px;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+nav {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+}
+
+nav a.active {
+  color: #ffd700;
+}
+
+/* Section Styles */
+section {
+  padding: 20px;
+  background-color: #ff0000;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  color: #000000;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+a {
+  color: #1e90ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #f73100;
+}
+
+/* Theme Styles */
+.App.day {
+  background-color: #f0f0f0;
+  color: black;
+}
+
+.App.day section {
+  background-color: white;
+}
+
+.App.night {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.App.night header {
+  background: linear-gradient(to right, #333, #6b6b6b);
+}
+
+.App.night .header-content h1 {
+  color: rgb(131, 241, 232);
+}
+
+.App.night nav a {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.App.night nav a.active {
+  color: #ffd700;
+}
+
+.App.night section {
+  background-color: #333;
+}
+
+.App.night a {
+  color: #9acd32;
+}
+
+.App.night a:hover {
+  color: #f70000;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+  header {
+    padding: 15px;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    margin: 10px 0;
+  }
+
+  section {
+    padding: 15px;
+  }
+}

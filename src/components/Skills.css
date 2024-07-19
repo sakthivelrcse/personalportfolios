@@ -1,0 +1,87 @@
+/* Skills.css */
+
+#skills {
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+#skills h2 {
+  font-size: 40px;
+}
+
+.skills-cards-container {
+  display: flex;
+  justify-content: center; /* Centers the cards horizontally */
+  gap: 20px; /* Adds space between the cards */
+  flex-wrap: wrap; /* Allows wrapping of cards on smaller screens */
+}
+
+.skills-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  width: 200px; /* Set a fixed width for the cards */
+  text-align: center; /* Center align text and icons */
+}
+
+.skills-card h3 {
+  margin: 10px 0;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.skills-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.skills-card svg {
+  color: #1e90ff;
+  margin-bottom: 10px;
+}
+
+/* Light Mode Styles */
+.App.day #skills {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.App.day .skills-card {
+  background-color: #fff;
+  color: #333;
+}
+
+.App.day .skills-card svg {
+  color: #1e90ff;
+}
+
+/* Night Mode Styles */
+.App.night #skills {
+  background-color: #333;
+  color: #f9f9f9;
+}
+
+.App.night #skills h2 {
+  background-color: #333;
+  color: #ffffff;
+}
+
+.App.night .skills-card {
+  background-color: #444;
+  color: #f9f9f9;
+}
+.App.night .skills-card h3{
+  color: #f9f9f9;
+}
+.App.night .skills-card svg {
+  color: #ff9800;
+}
+
+/* About.css, Education.css, Skills.css, Projects.css, Contact.css, Certificates.css */
+.section {
+  animation: fadeIn 0.5s ease forwards;
+}

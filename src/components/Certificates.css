@@ -1,0 +1,83 @@
+/* Certificates.css */
+
+#certificates {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+  color: #333;
+}
+
+#certificates h2 {
+  font-size: 40px;
+}
+
+.certificates-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.certificates-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  width: 250px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.certificates-card img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.certificates-details h3 {
+  margin: 10px 0;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.certificates-details p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.certificates-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark mode styles */
+.App.night #certificates {
+  background-color: #2e2e2e;
+  color: #f9f9f9;
+}
+
+.App.night #certificates h2 {
+  color: #ffffff;
+}
+
+.App.night .certificates-card {
+  background-color: #444;
+  color: #f9f9f9;
+}
+
+.App.night .certificates-card img {
+  border: 1px solid #666;
+}
+
+.App.night .certificates-details h3 {
+  color: #f9f9f9;
+}
+
+.App.night .certificates-details p {
+  color: #bbb;
+}

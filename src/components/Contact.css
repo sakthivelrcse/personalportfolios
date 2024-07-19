@@ -1,0 +1,103 @@
+/* Contact.css */
+
+#contact {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+#contact h2 {
+  color: #282c34;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-info:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info p {
+  margin: 10px 0;
+  color: #000000;
+}
+
+.contact-info a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.social-links {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-links li {
+  margin: 0 10px;
+}
+
+.social-links a {
+  color: #1e90ff;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.social-links a:hover {
+  color: #005fa3;
+}
+
+.App.night #contact {
+  background-color: #2e2e2e;
+  color: #f9f9f9;
+}
+
+.App.night #contact h2 {
+  color: #ffffff;
+}
+
+.App.night .contact-info {
+  background-color: #444;
+  color: #f9f9f9;
+}
+
+.App.night .contact-info p {
+  background-color: #444;
+  color: #f9f9f9;
+}
+
+.App.night .contact-info a {
+  color: #1e90ff;
+}
+
+.App.night .contact-info a:hover {
+  color: #1c6abf;
+}
+
+.App.night .social-links a {
+  color: #f9f9f9;
+}
+
+.App.night .social-links a:hover {
+  color: #ddd;
+}

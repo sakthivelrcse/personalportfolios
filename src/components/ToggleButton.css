@@ -1,0 +1,17 @@
+.toggle-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: inherit; 
+    font-size: 1.5em; 
+    transition: color 0.3s ease;
+  }
+  
+  .toggle-button:hover {
+    color: #ffd700; 
+  }
+  
+  .toggle-button:focus {
+    outline: none; 
+  }
+  
